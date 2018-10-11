@@ -235,6 +235,19 @@ li a:hover {
     margin: 5px 0px 5px 0px;
     border: 2px solid white;
 }
+/* search-form */
+.search-form{
+
+    width:80%;
+    background:none;
+    font-family: Raleway;
+    font-size: 15px;
+    color:orange;
+    padding: 10px 5px 10px 30px;
+    border-radius: 50px;
+    margin: 30px 5px 5px 0px;
+    border: 2px solid white;
+}
 /* end of the various styles for the form element*/
 /* styling the modal box section */
 /* modal boxes */
@@ -305,8 +318,8 @@ li a:hover {
 /* footer section */
 .footer-section{
     margin-top: 50px;
-    background: #111111;
-    padding: 50px 0px 50px 0px;
+    background:black;
+    padding: 30px 0px 30px 0px;
 }
 .footer-section2{
     margin-top: 50px;
@@ -315,6 +328,6 @@ li a:hover {
 .copy-right-area > p{
     text-align:center;
     color:white;
-    font-size:15px;
+    font-size:12px;
 }
 /* end of styling for footers section */
