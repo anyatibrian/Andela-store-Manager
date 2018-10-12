@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>store-manager|adminDashboard|products</title>
+    <!-- link to main.css-->
+    <link  rel="stylesheet" type="text/css"   href="css/main.css" >
+    <!-- link to the Raleway google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <!-- the header content goes here-->
+    <div class="nav-bar">
+        <!-- the navigation begins from here-->
+        <div class="row">
+            <div class="col-1">
+             <p></p>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <li><a href="attendants.html">Attendants</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="sales-records.html">Sales Records</a></li>
+                </ul>
+            </div>
+            <div class="col-5">
+                <input type="text" name="search" id="search" class="search-form " value="please enter your search........">
+            </div>
+            <div class="col-3">
+                <div class="user-area">
+                     <img src="imges/default.png">
+                </div>
+            </div>
+        </div>
+        <!-- the navigation content begins here-->
+    </div>
+    <!-- the header content ends here-->
+</div>
+<div class="main-content">
+    <!-- the main content begins here-->
+     <div class="row userAdmin-dashboard-content">
+         <div class="col-1">
+             <p></p>
+         </div>
+            <!-- the begining of the tables -->
+            <div class="col-10">
+                <button class="add-item" id="add-product-button" onclick="displayAddPdtModal()">product</button>
+                <table id="myTable">
+                <tr class="header">
+                    <th style="width:10%;"></th>
+                    <th style="width:10%;"> product</th>
+                    <th style="width:40%;">Description</th>
+                    <th style="width:10%;">Quantity</th>
+                    <th style="width:10%;">price</th>
+                    <th style="width:10%;"></th>
+                    <th style="width:10%;"></th>
+                </tr>
+                <tr>
+                    <td><img src="imges/kisspng-microphone-zagg-ifrogz-intone-earbuds-audio-headph-5af8e34de8ddf7.9595026215262605579538.png" class="image-circle-3"></td>
+                    <td>pro-book</td>
+                    <td>
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                    </td>
+                    <td> 46</td>
+                    <td>4600/=</td>
+                    <td><button id="edit" class="button-success" onclick="displayEditPdtModals()">Edit</button></td>
+                    <td><button id="Delete" class="button-danger">Delete</button></td></td>
+                </tr>
+                    <tr>
+                    <td><img src="imges/kisspng-beats-solo-2-beats-electronics-beats-solo-hd-headp-5b0e0d19849558.5974404315276475135431.png" class="image-circle-3"></td>
+                    <td>Backpack</td>
+                    <td>
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                    </td>
+                    <td> 46</td>
+                    <td>4600/=</td>
+                    <td><button id="edit2" class="button-success" onclick="displayEditPdtModals()">Edit</button></td>
+                    <td><button id="delete2" class="button-danger">Delete</button></td></td>
+                </tr>
+                    <tr>
+                    <td><img src="imges/kisspng-manfrotto-backpack-pro-light-3n1-35-camera-manfrot-5b199beab5fef3.4438761615284049707455.png" class="image-circle-3"></td>
+                    <td>Backpack</td>
+                    <td>
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                    </td>
+                    <td> 46</td>
+                    <td>4600/=</td>
+                    <td><button id="edit4" class="button-success" onclick="displayEditPdtModals()">Edit</button></td>
+                    <td><button id="delete4" class="button-danger">Delete</button></td></td>
+                </tr>
+                    <tr>
+                    <td><img src="imges/kisspng-manfrotto-street-medium-backpack-camera-manfrotto-ms-backpack-5b2f2039bf3bf0.3158680515298150977833.png" class="image-circle-3"></td>
+                    <td>Backpack</td>
+                    <td>
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                    </td>
+                    <td> 46</td>
+                    <td>4600/=</td>
+                    <td><button id="edit6" class="button-success" onclick="displayEditPdtModals()">Edit</button></td>
+                    <td><button id="delete6" class="button-danger">Delete</button></td></td>
+                </tr>
+            </table>
+            </div>
+     </div>
+    <div class="col-1">
+       <p></p>
+    </div>
+    <!-- the content ends here-->
+
+</div>
+<!-- the beginning of the various modal box section-->
+<!-- The Modal -->
+<div class="row">
+    <div class="modal" id="add-product-modal">
+        <div class="col-4">
+            <P></P>
+        </div>
+        <div class="col-4">
+            <span class="close" id="close_add_modal" onclick="closeModal()">&times;</span>
+            <div class="form-area-section">
+                <h1 class="text-white text-large">new product</h1>
+                <form method="post" action="">
+                    <div>
+                        <label for="pdtname" class="text-white">product name</label>
+                        <input type="text" name="food-name" id="pdtname" class="form-control">
+                    </div>
+                    <div>
+                        <label for="pdtDesc" class="text-white">Description</label>
+                        <textarea class="form-control" id="pdtDesc" name="pdtDesc" placeholder="your product description here....">
+
+                        </textarea>
+                    </div>
+                    <div>
+                        <label for="price" class="text-white">price</label>
+                        <input type="text" name="food-name" id="price" class="form-control">
+                    </div>
+                    <div>
+                        <label for="pdt-image" class="text-white">image</label>
+                        <input type="file" name="pdt-image" id="pdt-image" class="form-control">
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit"  value="add product" id="submit" class="button-white">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- edit product modal-->
+<div class="row">
+    <div class="modal" id="edit-add-product-modal">
+        <div class="col-4">
+            <P></P>
+        </div>
+        <div class="col-4">
+            <span class="close" id="edit-close_add_modal" onclick="closeModal()">&times;</span>
+            <div class="form-area-section">
+                <h1 class="text-white text-large">Edit product</h1>
+                <form method="post" action="">
+                    <div>
+                        <label for="edit-pdtname" class="text-white">product name</label>
+                        <input type="text" name="food-name" id="edit-pdtname" class="form-control">
+                    </div>
+                    <div>
+                        <label for="edit-pdtDesc" class="text-white">Description</label>
+                        <textarea class="form-control" id="edit-pdtDesc" name="pdtDesc" placeholder="your product description here....">
+
+                        </textarea>
+                    </div>
+                    <div>
+                        <label for="edit-price" class="text-white">price</label>
+                        <input type="text" name="food-name" id="edit-price" class="form-control">
+                    </div>
+                    <div>
+                        <label for="pdt-image" class="text-white">image</label>
+                        <input type="file" name="pdt-image" id="edit-pdt-image" class="form-control">
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit"  value="save product" id="edit-submit" class="button-white">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- the footer sections begins from here -->
+<div class="footer-section">
+    <div class="footer-area">
+    </div>
+    <div class="copy-right-area">
+        <P>all rights reserved store-manager 2018</P>
+    </div>
+</div>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
