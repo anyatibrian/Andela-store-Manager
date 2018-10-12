@@ -127,7 +127,7 @@ li a:hover {
 }
 /* styling for various button components */
 /* button elements styling*/
-.button-white{
+.button-sunshine{
     background:orange;
     color:white;
     padding: 10px 50px 10px 50px;
@@ -140,21 +140,10 @@ li a:hover {
     border:2px solid orange;
     padding: 10px 30px 10px 30px;
     font-size: 15px;
-    margin: 10px 0 10px 0;
+    margin: 30px 10px 30px 0;
     color: orange;
     border-radius: 5px;
     float: right;
-}
-.button-sunshine-outline-order{
-    background: none;
-    border:2px solid orange;
-    padding: 10px 30px 10px 30px;
-    font-size: 15px;
-    margin: 10px 0 10px 0;
-    color:white;
-    border-radius: 5px;
-    float: right;
-    width: 100%;
 }
 .add-item{
     background: none;
@@ -178,6 +167,25 @@ li a:hover {
 .button-danger{
     background-color:red;
     padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+    color: white;
+    border: 1px red;
+}
+.check-out{
+    margin: 10px 0px 0px 0px;
+    color:white;
+    background:#ffa500;
+    padding: 15px 40px 15px 40px;
+    float:right;
+    border: none;
+    font-family:Raleway;
+    border-radius: 5px;
+}
+.view-cart{
+    font-family: Raleway;
+    background-color:orange;
+    padding: 15px 30px 15px 30px;
+    margin: 30px 10px 30px 0;
     border-radius: 4px;
     color: white;
     border: 1px red;
@@ -206,6 +214,12 @@ li a:hover {
     height:70px;
     border-radius: 50%;
 }
+.image-square{
+    width:70px;
+    height:70px;
+}
+/* styling the squared image */
+
 /* end of the styling for various button element*/
 /*form section areas*/
 
@@ -226,15 +240,6 @@ li a:hover {
     padding:50px 50px 100px 50px;
     opacity:0.95;
 }
-.form-control-order{
-    width: 100%;
-    background:none;
-    color:white;
-    padding: 10px 5px 10px 5px;
-    border-radius: 5px;
-    margin: 5px 0px 5px 0px;
-    border: 2px solid white;
-}
 /* search-form */
 .search-form{
 
@@ -247,6 +252,16 @@ li a:hover {
     border-radius: 50px;
     margin: 30px 5px 5px 0px;
     border: 2px solid white;
+}
+.qnty-form{
+    width: 40%;
+    background:none;
+    color:black;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+    border: 2px solid orange;
 }
 /* end of the various styles for the form element*/
 /* styling the modal box section */
@@ -294,7 +309,28 @@ li a:hover {
     color: red;
     cursor: pointer;
 }
-/* end styling for the modal boxes */
+/* the start of the modal cart content*/
+.modal-cart {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content for the Buy*/
+.modal-cart-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
 /* the styling for the content */
 .content{
     padding-left: 50px;
@@ -305,13 +341,6 @@ li a:hover {
     width: 100%;
     height: auto;
     background-repeat: no-repeat;
-    background-size:cover;
-}
-.content-with-image2{
-    background-image: url("../imges/business.jpg");
-    width: 100%;
-    height: auto;
-    background-repeat:no-repeat;
     background-size:cover;
 }
 /* end of the content styling */
@@ -331,3 +360,68 @@ li a:hover {
     font-size:12px;
 }
 /* end of styling for footers section */
+/* responsive design */
+@media only screen and (max-width: 680px) {
+    .col-4 {
+        width:80%;
+        float: left
+    }
+    .form-area-section{
+        margin-top:auto;
+        margin-bottom:auto;
+        background:black;
+        opacity:0.95;
+        width: 80%;
+        
+    }
+    .button-sunshine{
+        background:orange;
+        color:white;
+        padding: 10px 50px 10px 50px;
+        font-size: 20px;
+        margin: 10px 0 10px 0;
+        border: 1px solid orange;
+        border-radius: 5px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .col-4 {
+        width:100%;
+        float: left;
+    }
+    .form-area-section{
+        margin-top:auto;
+        margin-bottom:auto;
+        background: grey;
+        opacity:0.95;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 780px) {
+    .col-4 {
+        width:100%;
+        float: left
+    }
+    .form-area-section{
+        margin-top: 10%;
+        margin-bottom:10%;
+        background: grey;
+        opacity:0.95;
+        width: 80%;
+        margin-left: 100px;
+    }
+}
+@media only screen and (max-width: 880px) {
+    .col-4 {
+        width:100%;
+        float: left
+    }
+    .form-area-section{
+        margin-top: 10%;
+        margin-bottom:10%;
+        background: grey;
+        opacity:0.95;
+        width: 60%;
+        margin-left: 100px;
+    }
+}
