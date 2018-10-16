@@ -1,0 +1,249 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Python template
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+.gitignore
+.idea/
+venv/Include/
+venv/Scripts/
+venv/tcl/tcl8.6/auto.tcl
+venv/tcl/tcl8.6/clock.tcl
+venv/tcl/tcl8.6/encoding/
+venv/tcl/tcl8.6/history.tcl
+venv/tcl/tcl8.6/http1.0/
+venv/tcl/tcl8.6/init.tcl
+venv/tcl/tcl8.6/package.tcl
+venv/tcl/tcl8.6/parray.tcl
+venv/tcl/tcl8.6/safe.tcl
+venv/tcl/tcl8.6/tclIndex
+venv/tcl/tcl8.6/tzdata/Africa/
+venv/tcl/tcl8.6/tzdata/America/
+venv/tcl/tcl8.6/tzdata/Antarctica/
+venv/tcl/tcl8.6/tzdata/Arctic/
+venv/tcl/tcl8.6/tzdata/Asia/Almaty
+venv/tcl/tcl8.6/tzdata/Asia/Anadyr
+venv/tcl/tcl8.6/tzdata/Asia/Aqtobe
+venv/tcl/tcl8.6/tzdata/Asia/Ashgabat
+venv/tcl/tcl8.6/tzdata/Asia/Ashkhabad
+venv/tcl/tcl8.6/tzdata/Asia/Baghdad
+venv/tcl/tcl8.6/tzdata/Asia/Bahrain
+venv/tcl/tcl8.6/tzdata/Asia/Bangkok
+venv/tcl/tcl8.6/tzdata/Asia/Barnaul
+venv/tcl/tcl8.6/tzdata/Asia/Beirut
+venv/tcl/tcl8.6/tzdata/Asia/Bishkek
+venv/tcl/tcl8.6/tzdata/Asia/Brunei
+venv/tcl/tcl8.6/tzdata/Asia/Calcutta
+venv/tcl/tcl8.6/tzdata/Asia/Choibalsan
+venv/tcl/tcl8.6/tzdata/Asia/Chongqing
+venv/tcl/tcl8.6/tzdata/Asia/Chungking
+venv/tcl/tcl8.6/tzdata/Asia/Colombo
+venv/tcl/tcl8.6/tzdata/Asia/Damascus
+venv/tcl/tcl8.6/tzdata/Asia/Dubai
+venv/tcl/tcl8.6/tzdata/Asia/Dushanbe
+venv/tcl/tcl8.6/tzdata/Asia/Harbin
+venv/tcl/tcl8.6/tzdata/Asia/Hebron
+venv/tcl/tcl8.6/tzdata/Asia/Ho_Chi_Minh
+venv/tcl/tcl8.6/tzdata/Asia/Hong_Kong
+venv/tcl/tcl8.6/tzdata/Asia/Irkutsk
+venv/tcl/tcl8.6/tzdata/Asia/Istanbul
+venv/tcl/tcl8.6/tzdata/Asia/Jakarta
+venv/tcl/tcl8.6/tzdata/Asia/Jayapura
+venv/tcl/tcl8.6/tzdata/Asia/Jerusalem
+venv/tcl/tcl8.6/tzdata/Asia/Kabul
+venv/tcl/tcl8.6/tzdata/Asia/Kamchatka
+venv/tcl/tcl8.6/tzdata/Asia/Karachi
+venv/tcl/tcl8.6/tzdata/Asia/Kashgar
+venv/tcl/tcl8.6/tzdata/Asia/Kathmandu
+venv/tcl/tcl8.6/tzdata/Asia/Katmandu
+venv/tcl/tcl8.6/tzdata/Asia/Khandyga
+venv/tcl/tcl8.6/tzdata/Asia/Kolkata
+venv/tcl/tcl8.6/tzdata/Asia/Krasnoyarsk
+venv/tcl/tcl8.6/tzdata/Asia/Kuala_Lumpur
+venv/tcl/tcl8.6/tzdata/Asia/Kuching
+venv/tcl/tcl8.6/tzdata/Asia/Kuwait
+venv/tcl/tcl8.6/tzdata/Asia/Macao
+venv/tcl/tcl8.6/tzdata/Asia/Macau
+venv/tcl/tcl8.6/tzdata/Asia/Magadan
+venv/tcl/tcl8.6/tzdata/Asia/Makassar
+venv/tcl/tcl8.6/tzdata/Asia/Manila
+venv/tcl/tcl8.6/tzdata/Asia/Muscat
+venv/tcl/tcl8.6/tzdata/Asia/Nicosia
+venv/tcl/tcl8.6/tzdata/Asia/Novokuznetsk
+venv/tcl/tcl8.6/tzdata/Asia/Novosibirsk
+venv/tcl/tcl8.6/tzdata/Asia/Phnom_Penh
+venv/tcl/tcl8.6/tzdata/Asia/Pontianak
+venv/tcl/tcl8.6/tzdata/Asia/Pyongyang
+venv/tcl/tcl8.6/tzdata/Asia/Qatar
+venv/tcl/tcl8.6/tzdata/Asia/Qyzylorda
+venv/tcl/tcl8.6/tzdata/Asia/Rangoon
+venv/tcl/tcl8.6/tzdata/Asia/Riyadh
+venv/tcl/tcl8.6/tzdata/Asia/Saigon
+venv/tcl/tcl8.6/tzdata/Asia/Sakhalin
+venv/tcl/tcl8.6/tzdata/Asia/Samarkand
+venv/tcl/tcl8.6/tzdata/Asia/Seoul
+venv/tcl/tcl8.6/tzdata/Asia/Shanghai
+venv/tcl/tcl8.6/tzdata/Asia/Singapore
+venv/tcl/tcl8.6/tzdata/Asia/Srednekolymsk
+venv/tcl/tcl8.6/tzdata/Asia/Taipei
+venv/tcl/tcl8.6/tzdata/Asia/Tashkent
+venv/tcl/tcl8.6/tzdata/Asia/Tbilisi
+venv/tcl/tcl8.6/tzdata/Asia/Tehran
+venv/tcl/tcl8.6/tzdata/Asia/Tel_Aviv
+W
+ould remove venv/tcl/tcl8.6/tzdata/Asia/Thimbu
+venv/tcl/tcl8.6/tzdata/Asia/Thimphu
+venv/tcl/tcl8.6/tzdata/Asia/Tokyo
+venv/tcl/tcl8.6/tzdata/Asia/Tomsk
+venv/tcl/tcl8.6/tzdata/Asia/Ujung_Pandang
+venv/tcl/tcl8.6/tzdata/Asia/Ulaanbaatar
+venv/tcl/tcl8.6/tzdata/Asia/Ulan_Bator
+venv/tcl/tcl8.6/tzdata/Asia/Urumqi
+venv/tcl/tcl8.6/tzdata/Asia/Ust-Nera
+venv/tcl/tcl8.6/tzdata/Asia/Vientiane
+venv/tcl/tcl8.6/tzdata/Asia/Vladivostok
+venv/tcl/tcl8.6/tzdata/Asia/Yakutsk
+venv/tcl/tcl8.6/tzdata/Asia/Yekaterinburg
+venv/tcl/tcl8.6/tzdata/Asia/Yerevan
+venv/tcl/tcl8.6/tzdata/Atlantic/
+venv/tcl/tcl8.6/tzdata/Australia/
+venv/tcl/tcl8.6/tzdata/Brazil/
+venv/tcl/tcl8.6/tzdata/CST6CDT
+venv/tcl/tcl8.6/tzdata/Canada/
+venv/tcl/tcl8.6/tzdata/Chile/
+venv/tcl/tcl8.6/tzdata/Cuba
+venv/tcl/tcl8.6/tzdata/EST5EDT
+venv/tcl/tcl8.6/tzdata/Egypt
+venv/tcl/tcl8.6/tzdata/Eire
+venv/tcl/tcl8.6/tzdata/Europe/
+venv/tcl/tcl8.6/tzdata/GB-Eire
+venv/tcl/tcl8.6/tzdata/GMT+0
+venv/tcl/tcl8.6/tzdata/GMT-0
+venv/tcl/tcl8.6/tzdata/GMT0
+venv/tcl/tcl8.6/tzdata/Greenwich
+venv/tcl/tcl8.6/tzdata/Hongkong
+venv/tcl/tcl8.6/tzdata/Iceland
+venv/tcl/tcl8.6/tzdata/Indian/
+venv/tcl/tcl8.6/tzdata/Iran
+venv/tcl/tcl8.6/tzdata/Israel
+venv/tcl/tcl8.6/tzdata/Jamaica
+venv/tcl/tcl8.6/tzdata/Japan
+venv/tcl/tcl8.6/tzdata/Kwajalein
+venv/tcl/tcl8.6/tzdata/Libya
+venv/tcl/tcl8.6/tzdata/MST7MDT
+venv/tcl/tcl8.6/tzdata/Mexico/
+venv/tcl/tcl8.6/tzdata/NZ-CHAT
+venv/tcl/tcl8.6/tzdata/Navajo
+venv/tcl/tcl8.6/tzdata/PST8PDT
+venv/tcl/tcl8.6/tzdata/Pacific/
+venv/tcl/tcl8.6/tzdata/Poland
+venv/tcl/tcl8.6/tzdata/Portugal
+venv/tcl/tcl8.6/tzdata/Singapore
+venv/tcl/tcl8.6/tzdata/SystemV/
+venv/tcl/tcl8.6/tzdata/Turkey
+venv/tcl/tcl8.6/tzdata/Universal
+venv/tcl/tcl8.6/tzdata/W-SU
+venv/tcl/tcl8.6/tzdata/Zulu
+venv/tcl/tcl8.6/word.tcl
