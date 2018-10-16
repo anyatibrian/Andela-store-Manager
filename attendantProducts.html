@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>store-manager|attendantDashboard|sales-records</title>
+    <!-- link to main.css-->
+    <link  rel="stylesheet" type="text/css"   href="css/main.css" >
+    <!-- link to the Raleway google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <!-- the header content goes here-->
+    <div class="nav-bar">
+        <!-- the navigation begins from here-->
+        <div class="row">
+            <div class="col-1">
+             <p></p>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <li><a href="attendantProducts.html">Products</a></li>
+                    <li><a href="attendant-salesRecord.html">sales Record</a></li>
+                    <li><a href="cart-page.html">Cart</a></li>
+                </ul>
+            </div>
+            <div class="col-5">
+                <input type="text" name="search" id="search" class="search-form " value="please enter your search........">
+            </div>
+            <div class="col-3">
+                <div class="user-area">
+                     <img src="imges/default.png">
+                </div>
+            </div>
+        </div>
+        <!-- the navigation content begins here-->
+    </div>
+    <!-- the header content ends here-->
+</div>
+<div class="main-content">
+    <!-- the main content begins here-->
+     <div class="row userAdmin-dashboard-content">
+         <div class="col-1">
+             <p></p>
+         </div>
+            <!-- the begining of the tables -->
+            <div class="col-10">
+                <table id="myTable">
+                <tr class="header">
+                    <th style="width:10%;"></th>
+                    <th style="width:10%;"> product</th>
+                    <th style="width:40%;">Description</th>
+                    <th style="width:10%;">Quantity</th>
+                    <th style="width:10%;">price</th>
+                    <th style="width:15%;"></th>
+                </tr>
+                <tr>
+                    <td><img src="imges/kisspng-microphone-zagg-ifrogz-intone-earbuds-audio-headph-5af8e34de8ddf7.9595026215262605579538.png" class="image-circle-3"></td>
+                    <td>pro-book</td>
+                    <td>
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                    </td>
+                    <td> 46</td>
+                    <td>4600/=</td>
+                    <td><button id="edit" class="button-success" onclick="displayCartModals()">ADD TO CART</button></td>
+                </tr>
+                    <tr>
+                    <td><img src="imges/kisspng-beats-solo-2-beats-electronics-beats-solo-hd-headp-5b0e0d19849558.5974404315276475135431.png" class="image-circle-3"></td>
+                    <td>Backpack</td>
+                    <td>
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                    </td>
+                    <td> 46</td>
+                    <td>4600/=</td>
+                    <td><button id=" " class="button-success" onclick="displayCartModals()" >ADD TO CART</button></td>
+                </tr>
+                    <tr>
+                    <td><img src="imges/kisspng-manfrotto-backpack-pro-light-3n1-35-camera-manfrot-5b199beab5fef3.4438761615284049707455.png" class="image-circle-3"></td>
+                    <td>Backpack</td>
+                    <td>
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                    </td>
+                    <td> 46</td>
+                    <td>4600/=</td>
+                    <td><button  class="button-success" onclick="displayCartModals()" >ADD TO CART</button></td>
+
+                </tr>
+                    <tr>
+                    <td><img src="imges/kisspng-manfrotto-street-medium-backpack-camera-manfrotto-ms-backpack-5b2f2039bf3bf0.3158680515298150977833.png" class="image-circle-3"></td>
+                    <td>Backpack</td>
+                    <td>
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                    </td>
+                    <td> 46</td>
+                    <td>4600/=</td>
+                   <td><button id="content1" class="button-success" onclick="displayCartModals()" >ADD TO CART</button></td>
+                </tr>
+            </table>
+            </div>
+     </div>
+    <div class="col-1">
+       <p></p>
+    </div>
+    </div>
+    <!-- the content ends here-->
+    <!-- the content ends here-->
+</div>
+<!--- modal boxes section---->
+<div class="row">
+    <div class="col-4">
+        <p></p>
+    </div>
+    <div class="col-4">
+        <div id="by-product" class="modal-cart">
+            <!-- Modal content -->
+            <div class="modal-cart-content">
+                <span class="close" onclick="close_cart_modal()">&times;</span>
+                <h2>Successfully added to the list</h2>
+                <a href="attendantProducts.html"><button class="button-sunshine-outline">CONTINUE SHOPPING </button></a>
+                <a href="cart-page.html"><button class="view-cart">VIEW CART AND CHECKOUT </button></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <P></P>
+    </div>
+</div>
+<!--- the footer section of the app--->
+<div class="footer-section">
+    <div class="footer-area">
+    </div>
+    <div class="copy-right-area">
+        <P>all rights reserved store-manager 2018</P>
+    </div>
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
