@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>store-manager|adminDashboard|attendants</title>
+    <!-- link to main.css-->
+    <link  rel="stylesheet" type="text/css"   href="css/main.css" >
+    <!-- link to the Raleway google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <!-- the header content goes here-->
+    <div class="nav-bar">
+        <!-- the navigation begins from here-->
+        <div class="row">
+            <div class="col-1">
+             <p></p>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <li><a href="attendants.html">Attendants</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="sales-records.html">Sales Records</a></li>
+                </ul>
+            </div>
+            <div class="col-5">
+                <input type="text" name="search" id="search" class="search-form " value="please enter your search........">
+            </div>
+            <div class="col-3">
+                <div class="user-area">
+                     <img src="imges/default.png">
+                </div>
+            </div>
+        </div>
+        <!-- the navigation content begins here-->
+    </div>
+    <!-- the header content ends here-->
+</div>
+<div class="main-content">
+    <!-- the main content begins here-->
+<div class="row userAdmin-dashboard-content">
+         <div class="col-1">
+             <p></p>
+         </div>
+            <!-- the begining of the tables -->
+            <div class="col-10">
+                <button class="add-item" id="add-product-button" onclick="displayAddAttendantModals()">Register</button>
+                <table id="myTable">
+                <tr class="header">
+                    <th style="width:10%;"></th>
+                    <th style="width:15%;">Attendant</th>
+                    <th style="width:35%;">summery info</th>
+                    <th style="width:10%;">email</th>
+                    <th style="width:10%;">store</th>
+                    <th style="width:10%;"></th>
+                    <th style="width:10%;"></th>
+                </tr>
+                <tr>
+                    <td><img src="imges/kisspng-microphone-zagg-ifrogz-intone-earbuds-audio-headph-5af8e34de8ddf7.9595026215262605579538.png" class="image-circle-3"></td>
+                    <td>anyati brian</td>
+                    <td>
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                    </td>
+                    <td>anyatibrian@gmail</td>
+                    <td>Lira</td>
+                    <td><button id="edit" class="button-success" onclick="displayEditAttendantModals()">Edit</button></td>
+                    <td><button id="Delete" class="button-danger">Delete</button></td></td>
+                </tr>
+                    <tr>
+                    <td><img src="imges/kisspng-beats-solo-2-beats-electronics-beats-solo-hd-headp-5b0e0d19849558.5974404315276475135431.png" class="image-circle-3"></td>
+                    <td>Egjura Kennedy</td>
+                    <td>
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilant
+                    </td>
+                    <td>ejurakenenedy@gmail.com</td>
+                    <td>Kampala</td>
+                    <td><button id="edit2" class="button-success" onclick="displayEditAttendantModals()">Edit</button></td>
+                    <td><button id="delete2" class="button-danger">Delete</button></td></td>
+                </tr>
+                    <tr>
+                    <td><img src="imges/kisspng-manfrotto-backpack-pro-light-3n1-35-camera-manfrot-5b199beab5fef3.4438761615284049707455.png" class="image-circle-3"></td>
+                    <td>John Doe</td>
+                    <td>
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                    </td>
+                    <td>johndoe@gmail.com</td>
+                    <td>Lira</td>
+                    <td><button id="edit4" class="button-success" onclick="displayEditAttendantModals()">Edit</button></td>
+                    <td><button id="delete4" class="button-danger">Delete</button></td></td>
+                </tr>
+                    <tr>
+                    <td><img src="imges/kisspng-manfrotto-street-medium-backpack-camera-manfrotto-ms-backpack-5b2f2039bf3bf0.3158680515298150977833.png" class="image-circle-3"></td>
+                    <td>Banny Unicorn</td>
+                    <td>
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                        this product comes with alot of goodies like the master somero of the most vigilante
+                    </td>
+                    <td>bannyunicorn@gmail</td>
+                    <td>Mbale</td>
+                    <td><button id="edit6" class="button-success" onclick="displayEditAttendantModals()">Edit</button></td>
+                    <td><button id="delete6" class="button-danger">Delete</button></td></td>
+                </tr>
+            </table>
+            </div>
+     </div>
+    <div class="col-1">
+       <p></p>
+    </div>
+    <!-- the content ends here-->
+</div>
+<!--edit user The Modal -->
+<div class="row">
+    <div class="modal" id="edit-attend-modal">
+        <div class="col-4">
+            <P></P>
+        </div>
+        <div class="col-4">
+            <span class="close" onclick="close_attendant_model()">&times;</span>
+            <div class="form-area-section">
+                <img src="imges/default.png" class="image-profile">
+                <h1 class="text-white text-large">edit profile</h1>
+                <form method="post" action="">
+                    <div>
+                        <label for="username" class="text-white">username</label>
+                        <input type="text" name="username" id="username" class="form-control" value="johndoe....">
+                    </div>
+                    <div>
+                        <label for="email" class="text-white">E-mail</label>
+                        <input type="text" name="email" id="email" class="form-control" value="johndoe@gmail.com..">
+                    </div>
+                    <div>
+                        <label for="password" class="text-white">password</label>
+                        <input type="password" name="password" id="password" class="form-control" value="mypassword">
+                    </div>
+                    <div>
+                        <label for="profileDesc" class="text-white" >profile Description</label>
+                       <textarea name="profileDesc" id="profileDesc" value="please some that describes me" class="form-control"></textarea>
+                    </div>
+                    <div>
+                        <label for="profile-image" class="text-white">image</label>
+                        <input type="file" name="food-image" id="profile-image" class="form-control">
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit"  value="submit" id="submit" class="button-white">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--edit user The Modal -->
+<div class="row">
+    <div class="modal" id="add-attend-modal">
+        <div class="col-4">
+            <P></P>
+        </div>
+        <div class="col-4">
+            <span class="close" onclick="close_attendant_model()">&times;</span>
+            <div class="form-area-section">
+                <h1 class="text-white text-large">Register Attendant</h1>
+                <form method="post" action="">
+                    <div>
+                        <label for="new_username" class="text-white">username</label>
+                        <input type="text" name="user-name" id="new_username" class="form-control" value="johndoe....">
+                    </div>
+                    <div>
+                        <label for="new_email" class="text-white">E-mail</label>
+                        <input type="text" name="email" id="new_email" class="form-control" value="johndoe@gmail.com..">
+                    </div>
+                    <div>
+                        <label for="password" class="text-white">password</label>
+                        <input type="password" name="password" id="new_password" class="form-control" value="mypassword">
+                    </div>
+                    <div>
+                        <label for="new_profileDesc" class="text-white" >profile Description</label>
+                       <textarea name="profileDesc" id="new_profileDesc" value="please some that describes me" class="form-control"></textarea>
+                    </div>
+                    <div>
+                        <label for="profile-image" class="text-white">image</label>
+                        <input type="file" name="image" id="new_profile-image" class="form-control">
+                    </div>
+                    <div>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit"  value="submit" id="submit_user" class="button-white">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div><!-- the content ends here-->
+<!--- the footer section of the app--->
+<div class="footer-section">
+    <div class="footer-area">
+    </div>
+    <div class="copy-right-area">
+        <P>all rights reserved store-manager 2018</P>
+    </div>
+</div>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
