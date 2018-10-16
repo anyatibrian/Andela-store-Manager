@@ -24,6 +24,7 @@ def data():
 
 
 def test_post_product_endpoint(client, data):
-    """testing for post product endpoint"""
+    """testing for add product  endpoint"""
     response = client.post('/api/v1/products', data=json.dumps(data))
     assert response.status_code == 201
+
