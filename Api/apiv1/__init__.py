@@ -2,4 +2,4 @@ from flask import Blueprint
 
 api_blueprint = Blueprint('api_blueprint', __name__)
 
-from . import get_single_product_endpoints
+from . import post_sales_records_endpoint
