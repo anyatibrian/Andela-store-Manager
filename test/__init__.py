@@ -19,13 +19,3 @@ def data():
     }
     return data
 
-
-@pytest.fixture()
-def sales_data():
-    data = {
-        "attendant": "anyatibrian",
-        "product": "tourch",
-        "quantity": "9000",
-        "unit_price": "400"
-    }
-    return data
