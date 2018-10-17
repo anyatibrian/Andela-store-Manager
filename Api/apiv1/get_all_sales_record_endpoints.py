@@ -6,6 +6,7 @@ from Api.apiv1 import api_blueprint
 
 @api_blueprint.route('/sales', methods=['GET'])
 def get_sales_records():
+    """getting all the  sales record from the list"""
     if len(sales_records) != 0:
         return make_response(jsonify({'message': sales_records}))
     else:
