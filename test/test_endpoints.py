@@ -35,7 +35,16 @@ def test_get_product_endpoints(client):
     assert response.status_code == 200
 
 
-# checking whether the list is empty
+# checking whether the list is not empty
 def test_get_products_endpoints(client):
     response = client.get('api/v1/products')
     assert len(response.data) >= 0
+
+
+# testing the post product endpoint
+
+
+def test_get_single_product_endpoint(client):
+    """testing testing get single product endpoint"""
+    response = client.get('api/v1/products/{}'.format(1))
+    assert response.status_code == 200
