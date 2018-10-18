@@ -54,3 +54,9 @@ def test_get_product_id_not_exist(client):
     """testing whether the product id exist """
     response = client.get('api/v1/products/{}'.format(1))
     assert b"product does not exist" in response.data
+
+
+def test_post_sales_endpoint(client, sales_data):
+    """ testing the post sales endpoints"""
+    response = client.post('/api/v1/sales', data=json.dumps(sales_data))
+    assert response.status_code == 201
