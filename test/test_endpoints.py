@@ -48,3 +48,9 @@ def test_get_single_product_endpoint(client):
     """testing testing get single product endpoint"""
     response = client.get('api/v1/products/{}'.format(1))
     assert response.status_code == 200
+
+
+def test_get_product_id_not_exist(client):
+    """testing whether the product id exist """
+    response = client.get('api/v1/products/{}'.format(1))
+    assert b"product does not exist" in response.data
