@@ -71,3 +71,10 @@ def test_post_sales_endpoint(client, sales_data):
     """ testing the post sales endpoints"""
     response = client.post('/api/v1/sales', data=json.dumps(sales_data))
     assert response.status_code == 201
+
+
+# testing the post product endpoint
+def test_get_single_records_endpoint(client):
+    """testing the get single records endpoints"""
+    response = client.get('api/v1/sales/{}'.format(1))
+    assert response.status_code == 200
