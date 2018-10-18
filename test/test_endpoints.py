@@ -21,6 +21,17 @@ def data():
     return data
 
 
+@pytest.fixture()
+def sales_data():
+    data = {
+        "attendant_name": "anyatibrian",
+        "product": "tourch",
+        "quantity": "9000",
+        "unit_price": "400"
+    }
+    return data
+
+
 # testing the post product endpoint
 def test_post_product_endpoints(client, data):
     """testing the post product endpoints"""
