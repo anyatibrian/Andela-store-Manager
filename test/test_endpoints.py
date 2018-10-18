@@ -78,3 +78,9 @@ def test_get_single_records_endpoint(client):
     """testing the get single records endpoints"""
     response = client.get('api/v1/sales/{}'.format(1))
     assert response.status_code == 200
+
+
+def test_get_record_id_not_exist(client):
+    """testing whether the record  id exist """
+    response = client.get('api/v1/products/{}'.format(1000))
+    assert b"product does not exist" in response.data
