@@ -63,7 +63,8 @@ This is version one"v1" of the API
 |     GET  api/v1/products/product_id      |get a specific product by id |  
 |     PUT api/v1/products/product_id       |updates a specific product.  |
 |     POST api/v1/sales                    |create sales record          |   
-|     GET api/v1/sales                     |Fetch all sales record       |   
+|     GET api/v1/sales                     |Fetch all sales record       |  
+|     GET  api/v1/sales/sales_id           |get a particular sales record|
 
 
 
