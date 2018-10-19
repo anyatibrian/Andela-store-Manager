@@ -1,3 +1,6 @@
+
+[![Coverage Status](https://coveralls.io/repos/github/anyatibrian/Andela-store-Manager/badge.svg?branch=master)](https://coveralls.io/github/anyatibrian/Andela-store-Manager?branch=master)
+
 # Store Manager 
 is a web application that helps store owners manage sales and product inventory records and 
 should only be used in single store
