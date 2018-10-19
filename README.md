@@ -1,5 +1,6 @@
 
-[![Coverage Status](https://coveralls.io/repos/github/anyatibrian/Andela-store-Manager/badge.svg?branch=master)](https://coveralls.io/github/anyatibrian/Andela-store-Manager?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/anyatibrian/Andela-store-Manager/badge.svg?branch=Develop)](https://coveralls.io/github/anyatibrian/Andela-store-Manager?branch=Develop)[![Build Status](https://travis-ci.org/anyatibrian/Andela-store-Manager.svg?branch=develop)](https://travis-ci.org/anyatibrian/Andela-store-Manager)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7aed395af0c0d5463a76/maintainability)](https://codeclimate.com/github/anyatibrian/Andela-store-Manager/maintainability)
 
 # Store Manager 
 is a web application that helps store owners manage sales and product inventory records and 
