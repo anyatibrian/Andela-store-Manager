@@ -1,17 +1,13 @@
 [report]
 omit =
-    */python/*
-    */werkzeug/*
-    */jinja2/*
-    */flask/*
-    */markupsafe/*
+    */python?.?/*
+    */site-packages/nose/*
+    */__pycache__/*
+    *.pyc
     */venv/*
+    */home/travis/virtualenv/*
+    */.pytest_cache/*
+    */renamed/*
+    */ignored/*
     */.vscode/*
-    *__init__*
-
-[run]
-branch = true
-include = */scrapy/*
-omit =
-    test/*
-    scrapy/xlib/*
+    */tests/*
