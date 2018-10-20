@@ -25,7 +25,7 @@ should only be used in single store
 ## To view the API on Heroku 
 Copy this url paste it in a new tab
 ```
-- 
+- https://store-manager-123.herokuapp.com/api/v1/products
 
 ```
 
