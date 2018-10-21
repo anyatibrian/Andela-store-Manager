@@ -48,9 +48,12 @@ def test_get_product_endpoints(client):
     assert json.loads(response.data)['products'][0]['product_name'] == "touch"
     assert json.loads(response.data)['products'][1]['id'] == 2
     assert len(json.loads(response.data)) == 1
+    assert response.status_code == 200
 
 
 # checking whether the list is empty
-def test_get_products_endpoints(client):
+def test_get_products_endpoints_is_empty(client):
     response = client.get('api/v1/products')
+
     assert len(json.loads(response.data)) != 0
+    assert response.status_code == 200
