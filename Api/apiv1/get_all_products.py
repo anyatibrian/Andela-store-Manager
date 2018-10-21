@@ -9,4 +9,4 @@ def get_products():
     if len(product_list) != 0:
         return make_response(jsonify({'products': product_list}), 200)
     else:
-        return make_response(jsonify({'message': "you don't have any product yet "}), 200)
+        return make_response(jsonify({'message': "you don't have any product yet"}), 200)
