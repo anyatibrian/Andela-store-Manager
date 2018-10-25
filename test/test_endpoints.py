@@ -30,6 +30,11 @@ def sales_data():
     }
     return data
 
+def test_check_empty_product_list(client):
+    response = client.get('api/v1/products')
+    assert b"you don't have any product yet" in response.data
+
+
 # testing the post product endpoint
 def test_post_product_endpoints(client, data):
     """testing the post product endpoints"""
@@ -41,17 +46,9 @@ def test_post_product_endpoints(client, data):
 def test_get_product_endpoints(client):
     """getting all the products that were posted"""
     response = client.get('api/v1/products')
+    assert json.loads(response.data)['products'][0]['product_name'] == "touch"
+    assert len(json.loads(response.data)) == 1
     assert response.status_code == 200
-
-
-# checking whether the list is not empty
-def test_get_products_endpoints(client):
-    response = client.get('api/v1/products')
-    assert len(response.data) >= 0
-
-
-# testing the post product endpoint
-
 
 def test_get_single_product_endpoint(client):
     """testing testing get single product endpoint"""
